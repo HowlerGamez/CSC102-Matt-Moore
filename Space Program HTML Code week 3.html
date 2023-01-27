@@ -1,0 +1,60 @@
+<!--click "!"" and select it in drop down to create basic starter of html documents,
+provides all the tags and things necessary to create document.-->
+<!DOCTYPE html>
+<html lang="en">
+    <!--Matthew Moore - CSC102-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--title tag for the website link, don't make too long-->
+    <title>UAT Space Program</title>
+
+    <!--anything in the Javascript file will be included in this file as well-->
+    <script src="Space Program JS Code.js"></script>
+
+</head>
+
+<!--anything in the body section is what is actually seen by the viewer on the webpage-->
+<body>
+
+    <!--page header/subtitle introduction, only one h1 tag on a webpage-->
+    <h1>UAT Space Program</h1>
+
+    <!--image addition, src=source followed by file name (click desired file in drop down menu),
+        alt tag is what the viewers will see-->
+    <img src="UATspaceLogo-1.jpg" alt="UAT Space Logo" />
+    
+    <!--line breaker/ending-->
+    <br/>
+
+    <!--page paragraph tag, provides in text information for the viewer-->
+    <p>Are you interested in the progress of reaching to the stars that we call space? 
+        Then you should check out the University of Advancing Technology's Space Program!
+    </p>
+
+    <!--button input (click button, onclick reaction = 
+        javascript alert that shows when the button is clicked)-->
+    <input type="button" Value="Check this out!" onclick="alert('Are you ready to have your mind blown?!?');" />
+
+    <!-- Countdown visualization on main page -->
+    <p> Countdown: <span id="Countdown"></span> </p>
+
+    <!-- Countdown on main page going from 50-0 by variables of 5 -->
+    <script> 
+
+    //html comments: "<!-- -->"
+    //javascript comments: "//"
+
+        //allows this variable to get easier access to span id countdown from line 39
+        var countdownElement = document.getElementById("Countdown"); 
+        
+        // passes the value to the function in the JS file so it can add the countdown element
+        runTimer(countdownElement); 
+
+    </script>
+
+    <!--end of body section, nothing after this will be seen by webpage viewers-->
+</body>
+</html>
